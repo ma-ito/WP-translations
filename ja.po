@@ -2339,7 +2339,7 @@ msgstr "(このメッセージはバージョン %s で追加されました)"
 
 #: wp-includes/user.php:100
 msgid "<strong>ERROR</strong>: The password you entered for the username <strong>%1$s</strong> is incorrect. <a href=\"%2$s\" title=\"Password Lost and Found\">Lost your password</a>?"
-msgstr "<strong>エラー</strong>: ユーザー名 <strong>%1$s</strong> のパスワードが間違っています。<a href=\"%2$s\" title=\"パスワード紛失\">パスワードをお忘れですか</a> ?"
+msgstr "<strong>エラー</strong>: ユーザー名 <strong>%1$s</strong> のパスワードが間違っています。<a href=\"%2$s\">パスワードをお忘れですか</a> ?"
 
 #: wp-includes/class-wp-xmlrpc-server.php:5282
 msgid "Sorry, you cannot publish this post."
@@ -2592,7 +2592,7 @@ msgstr "新しいパスワードの確認"
 
 #: wp-login.php:357
 msgid "To reset your password, visit the following address:"
-msgstr "パスワードをリセットするには、以下へアクセスしてください。"
+msgstr "以下のURLにアクセスして、新しいパスワードを設定してください。"
 
 #: wp-login.php:595 wp-login.php:614
 msgid "Reset Password"
@@ -2869,7 +2869,7 @@ msgstr "<a href=\"%1$s\">%2$s</a> としてログイン中。"
 
 #: wp-includes/theme-compat/comments-popup.php:71
 msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out &raquo;</a>"
-msgstr "<a href=\"%1$s\">%2$s</a> としてログイン中。<a href=\"%3$s\" title=\"このアカウントからログアウトする\">ログアウト &raquo;</a>"
+msgstr "<a href=\"%1$s\">%2$s</a> としてログイン中。<a href=\"%3$s\">ログアウト &raquo;</a>"
 
 #: wp-includes/theme-compat/comments.php:91
 msgid "Submit Comment"
@@ -6253,7 +6253,7 @@ msgstr "<strong>エラー</strong>: パスワードを入力してください�
 
 #: wp-includes/user.php:93
 msgid "<strong>ERROR</strong>: Invalid username. <a href=\"%s\" title=\"Password Lost and Found\">Lost your password</a>?"
-msgstr "<strong>エラー</strong>: 無効なユーザー名です。<a href=\"%s\" title=\"パスワード再発行\">パスワードをお忘れですか</a> ?"
+msgstr "<strong>エラー</strong>: 無効なユーザー名です。<a href=\"%s\">パスワードをお忘れですか</a> ?"
 
 #: wp-includes/user.php:144
 msgid "<strong>ERROR</strong>: Your account has been marked as a spammer."
@@ -6293,7 +6293,7 @@ msgstr "パスワードの初期化をする権限がありません。"
 
 #: wp-login.php:367
 msgid "[%s] Password Reset"
-msgstr "[%s] パスワードのリセット"
+msgstr "パスワードのリセット"
 
 #: wp-login.php:388
 msgid "The e-mail could not be sent."
@@ -6542,7 +6542,7 @@ msgstr "強度インジケータ"
 
 #: wp-login.php:611
 msgid "Hint: The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers and symbols like ! \" ? $ % ^ &amp; )."
-msgstr "ヒント: パスワードは7文字以上にしてください。より強力にするには、大文字と小文字のアルファベット、数字や ! \" ? $ % ^ &amp; ) などの記号を組み合わせて使ってください。"
+msgstr "ヒント: パスワードは7文字以上かつ普通以上の強度になるものを設定してください。大文字と小文字のアルファベット、<br />数字や ! \" ? $ % ^ &amp; ) などの記号を組み合わせると、より強力になります。"
 
 #: wp-includes/script-loader.php:323
 msgid "Very weak"
