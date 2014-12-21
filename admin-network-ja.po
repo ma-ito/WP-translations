@@ -7,7 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/0.1\n"
+"X-Generator: GlotPress/1.0-alpha-1000\n"
 "Project-Id-Version: Network Admin\n"
 
 #: wp-admin/network/index.php:20 wp-admin/network/settings.php:17
@@ -676,6 +676,7 @@ msgid "You are about to remove the following theme:"
 msgid_plural "You are about to remove the following themes:"
 msgstr[0] "次のテーマを削除しようとしています:"
 
+#. translators: 1: theme name, 2: theme author
 #: wp-admin/network/themes.php:147
 msgid "Are you sure you wish to delete these themes?"
 msgstr "ほんとうにこれらのテーマを削除しますか ?"
@@ -1081,6 +1082,7 @@ msgstr[0] "認証用ユニークキーが <code>wp-config.php</code> にあり�
 msgid "To make your installation more secure, you should also add:"
 msgstr "インストールをさらに安全にするため、次を追加するとよいでしょう。"
 
+#. translators: 1: a filename like .htaccess. 2: a file path.
 #: wp-admin/network.php:474 wp-admin/network.php:510
 msgid "Add the following to your %1$s file in %2$s, <strong>replacing</strong> other WordPress rules:"
 msgstr "%2$s にある %1$s ファイルに含まれる他の WordPress ルールを<strong>置き換える</strong>かたちで以下を追加してください。"

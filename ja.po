@@ -7,7 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/0.1\n"
+"X-Generator: GlotPress/1.0-alpha-1000\n"
 "Project-Id-Version: 3.9.x\n"
 
 #: wp-includes/post.php:3129
@@ -52,6 +52,12 @@ msgstr "<code>%1$s</code> では <code>%3$s</code> 関数ではなく <code>%2$s
 msgid "http://codex.wordpress.org/Function_Reference/is_main_query"
 msgstr "http://wpdocs.sourceforge.jp/関数リファレンス/is_main_query"
 
+#. translators: This is a comma-separated list of very common words that should
+#. be excluded from a search,
+#. * like a, an, and the. These are usually called "stopwords". You should
+#. not simply translate these individual
+#. * words into your language. Instead, look for and provide commonly
+#. accepted stopwords in your language.
 #: wp-includes/query.php:2050
 msgctxt "Comma-separated list of search stopwords in your language"
 msgid "about,an,are,as,at,be,by,com,for,from,how,in,is,it,of,on,or,that,the,this,to,was,what,when,where,who,will,with,www"
@@ -285,7 +291,7 @@ msgstr "ミュート"
 msgid "Captions/Subtitles"
 msgstr "キャプション/字幕"
 
-#: wp-includes/script-loader.php:344 wp-login.php:631
+#: wp-includes/script-loader.php:344 wp-login.php:634
 msgid "Strength indicator"
 msgstr "強度インジケータ"
 
@@ -297,6 +303,7 @@ msgstr "非常に弱い"
 msgid "Weak"
 msgstr "弱い"
 
+#. translators: password strength
 #: wp-includes/script-loader.php:348
 msgctxt "password strength"
 msgid "Medium"
@@ -350,6 +357,7 @@ msgstr "公開予定日時:"
 msgid "Published on:"
 msgstr "公開日時:"
 
+#. translators: 1: month, 2: day, 3: year, 4: hour, 5: minute
 #: wp-includes/script-loader.php:447
 msgid "%1$s %2$s, %3$s @ %4$s : %5$s"
 msgstr "%3$s年%1$s月%2$s日 @ %4$s:%5$s"
@@ -459,11 +467,18 @@ msgstr ""
 "このメニューを完全に削除しようとしています。\n"
 "中止するには 'キャンセル' を、削除するには 'OK' をクリックしてください。"
 
+#. translators: If there are characters in your language that are not supported
+#. * by Open Sans, translate this to 'off'. Do not translate into your own
+#. language.
 #: wp-includes/script-loader.php:585
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr "on"
 
+#. translators: To add an additional Open Sans character subset specific to
+#. your language,
+#. * translate this to 'greek', 'cyrillic' or 'vietnamese'. Do not translate
+#. into your own language.
 #: wp-includes/script-loader.php:591
 msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
 msgid "no-subset"
@@ -715,7 +730,7 @@ msgstr "改行と段落タグは自動で挿入されます。メールアドレ
 msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out &raquo;</a>"
 msgstr "<a href=\"%1$s\">%2$s</a> としてログイン中。<a href=\"%3$s\" title=\"このアカウントからログアウトする\">ログアウト &raquo;</a>"
 
-#: wp-includes/theme-compat/comments-popup.php:80 wp-login.php:714
+#: wp-includes/theme-compat/comments-popup.php:80 wp-login.php:718
 msgid "E-mail"
 msgstr "メール"
 
@@ -909,58 +924,59 @@ msgstr "<strong>エラー</strong>: あなたのアカウントは、スパマ�
 msgid "Cannot create a user with an empty login name."
 msgstr "ログイン名が入力されていないため、ユーザーを作成できませんでした。"
 
+#. translators: 1: first name, 2: last name
 #: wp-includes/user.php:1654
 msgctxt "Display name based on first name and last name"
 msgid "%1$s %2$s"
 msgstr "%2$s%1$s"
 
-#: wp-includes/user.php:1792
+#: wp-includes/user.php:1795
 msgid "Invalid user ID."
 msgstr "無効なユーザー ID です。"
 
-#: wp-includes/user.php:1879
+#: wp-includes/user.php:1882
 msgid "AIM"
 msgstr "AIM"
 
-#: wp-includes/user.php:1880
+#: wp-includes/user.php:1883
 msgid "Yahoo IM"
 msgstr "Yahoo IM"
 
-#: wp-includes/user.php:1881
+#: wp-includes/user.php:1884
 msgid "Jabber / Google Talk"
 msgstr "Jabber / Google Talk"
 
-#: wp-includes/user.php:1926 wp-includes/user.php:1929
-#: wp-includes/user.php:1933 wp-includes/user.php:1944
-#: wp-includes/user.php:1960
+#: wp-includes/user.php:1929 wp-includes/user.php:1932
+#: wp-includes/user.php:1936 wp-includes/user.php:1947
+#: wp-includes/user.php:1963
 msgid "Invalid key"
 msgstr "無効なキー"
 
-#: wp-includes/user.php:2008
+#: wp-includes/user.php:2011
 msgid "<strong>ERROR</strong>: Please enter a username."
 msgstr "<strong>エラー</strong>: ユーザー名を入力してください。"
 
-#: wp-includes/user.php:2010
+#: wp-includes/user.php:2013
 msgid "<strong>ERROR</strong>: This username is invalid because it uses illegal characters. Please enter a valid username."
 msgstr "<strong>エラー</strong>: このユーザー名は使用できない文字を含んでいるため、無効です。有効なユーザー名を入力してください。"
 
-#: wp-includes/user.php:2013
+#: wp-includes/user.php:2016
 msgid "<strong>ERROR</strong>: This username is already registered. Please choose another one."
 msgstr "<strong>エラー</strong>: このユーザー名はすでに登録されています。他のユーザー名を選んでください。"
 
-#: wp-includes/user.php:2018
+#: wp-includes/user.php:2021
 msgid "<strong>ERROR</strong>: Please type your e-mail address."
 msgstr "<strong>エラー</strong>: メールアドレスを入力してください。"
 
-#: wp-includes/user.php:2020
+#: wp-includes/user.php:2023
 msgid "<strong>ERROR</strong>: The email address isn&#8217;t correct."
 msgstr "<strong>エラー</strong>: メールアドレスが正しくありません。"
 
-#: wp-includes/user.php:2023
+#: wp-includes/user.php:2026
 msgid "<strong>ERROR</strong>: This email is already registered, please choose another one."
 msgstr "<strong>エラー</strong>: このメールアドレスはすでに登録されています。別のメールアドレスを選んでください。"
 
-#: wp-includes/user.php:2063
+#: wp-includes/user.php:2066
 msgid "<strong>ERROR</strong>: Couldn&#8217;t register you&hellip; please contact the <a href=\"mailto:%s\">webmaster</a> !"
 msgstr "<strong>エラー</strong>: 登録できませんでした。<a href=\"mailto:%s\">管理者にご連絡</a>ください。"
 
@@ -1130,99 +1146,99 @@ msgstr "ユーザー名またはメールアドレス:"
 msgid "Get New Password"
 msgstr "新しいパスワードを取得"
 
-#: wp-login.php:593
+#: wp-login.php:596
 msgid "The passwords do not match."
 msgstr "パスワードが一致しません。"
 
-#: wp-login.php:608
+#: wp-login.php:611
 msgid "Password Reset"
 msgstr "パスワードのリセット"
 
-#: wp-login.php:608
+#: wp-login.php:611
 msgid "Your password has been reset."
 msgstr "パスワードをリセットしました。"
 
-#: wp-login.php:616 wp-login.php:646
+#: wp-login.php:619 wp-login.php:650
 msgid "Reset Password"
 msgstr "パスワードをリセット"
 
-#: wp-login.php:616
+#: wp-login.php:619
 msgid "Enter your new password below."
 msgstr "新しいパスワードを以下に入力してください。"
 
-#: wp-login.php:623
+#: wp-login.php:626
 msgid "New password"
 msgstr "新規パスワード"
 
-#: wp-login.php:627
+#: wp-login.php:630
 msgid "Confirm new password"
 msgstr "新しいパスワードの確認"
 
-#: wp-login.php:632
+#: wp-login.php:635
 msgid "Hint: The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! \" ? $ % ^ &amp; )."
 msgstr "ヒント: パスワードは少なくとも7文字以上であるべきです。より強固にするためには大文字と小文字、数字、 ! \" ? $ % ^ &amp; ) のような記号を使いましょう。"
 
-#: wp-login.php:705
+#: wp-login.php:709
 msgid "Registration Form"
 msgstr "登録フォーム"
 
-#: wp-login.php:705
+#: wp-login.php:709
 msgid "Register For This Site"
 msgstr "このブログに登録"
 
-#: wp-login.php:725
+#: wp-login.php:729
 msgid "A password will be e-mailed to you."
 msgstr "パスワードをメールで送信します。"
 
-#: wp-login.php:733 wp-login.php:915
+#: wp-login.php:737 wp-login.php:919
 msgid "Password Lost and Found"
 msgstr "パスワード紛失取り扱い"
 
-#: wp-login.php:733 wp-login.php:915
+#: wp-login.php:737 wp-login.php:919
 msgid "Lost your password?"
 msgstr "パスワードをお忘れですか ?"
 
-#: wp-login.php:779
+#: wp-login.php:783
 msgid "<strong>ERROR</strong>: Cookies are blocked due to unexpected output. For help, please see <a href=\"%1$s\">this documentation</a> or try the <a href=\"%2$s\">support forums</a>."
 msgstr "<strong>エラー</strong>: 予期しない出力により Cookies がブロックされました。ヘルプが必要な場合は<a href=\"%1$s\">こちらのドキュメンテーション</a>を読むか、<a href=\"%2$s\">サポートフォーラム</a>をご利用ください。"
 
-#: wp-login.php:780 wp-login.php:784
+#: wp-login.php:784 wp-login.php:788
 msgid "http://codex.wordpress.org/Cookies"
 msgstr "http://wpdocs.sourceforge.jp/Cookies"
 
-#: wp-login.php:783
+#: wp-login.php:787
 msgid "<strong>ERROR</strong>: Cookies are blocked or not supported by your browser. You must <a href=\"%s\">enable cookies</a> to use WordPress."
 msgstr "<strong>エラー</strong>: Cookies がブロックされているか、お使いのブラウザで未対応のようです。WordPress を使うには <a href=\"%s\">Cookie を有効化</a>する必要があります。"
 
-#: wp-login.php:802
+#: wp-login.php:806
 msgid "You have logged in successfully."
 msgstr "ログインに成功しました。"
 
-#: wp-login.php:836
+#: wp-login.php:840
 msgid "Session expired. Please log in again. You will not move away from this page."
 msgstr "セッションの期限が切れました。もう一度ログインしてください。このページからは移動しません。"
 
-#: wp-login.php:840
+#: wp-login.php:844
 msgid "You are now logged out."
 msgstr "ログアウトしました。"
 
-#: wp-login.php:842
+#: wp-login.php:846
 msgid "User registration is currently not allowed."
 msgstr "現在、ユーザー登録はできません"
 
-#: wp-login.php:844
+#: wp-login.php:848
 msgid "Check your e-mail for the confirmation link."
 msgstr "確認用のリンクをメールで送信しましたので、ご確認ください。"
 
-#: wp-login.php:846
+#: wp-login.php:850
 msgid "Check your e-mail for your new password."
 msgstr "新しいパスワードをメールで送信しましたので、ご確認ください。"
 
-#: wp-login.php:848
+#: wp-login.php:852
 msgid "Registration complete. Please check your e-mail."
 msgstr "登録を完了しました。メールを確認してください。"
 
-#: wp-login.php:850
+#: wp-login.php:854
 msgid "<strong>You have successfully updated WordPress!</strong> Please log back in to experience the awesomeness."
 msgstr "<strong>WordPress のアップグレードに成功しました !</strong> 再度ログインしてアップグレードした WordPress をお試しください。"
 
@@ -1962,6 +1978,7 @@ msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">より:</span>"
 msgid "Your comment is awaiting moderation."
 msgstr "あなたのコメントは承認待ちです。"
 
+#. translators: 1: date, 2: time
 #: wp-includes/comment-template.php:1799
 msgid "%1$s at %2$s"
 msgstr "%1$s %2$s"
@@ -2027,11 +2044,13 @@ msgstr "コメントを送信"
 msgid "Unapproved"
 msgstr "非承認"
 
+#. translators: comment status
 #: wp-includes/comment.php:477
 msgctxt "adjective"
 msgid "Approved"
 msgstr "承認済み"
 
+#. translators: comment status
 #: wp-includes/comment.php:479
 msgctxt "adjective"
 msgid "Spam"
@@ -2281,6 +2300,7 @@ msgstr "直近のコメント"
 msgid "Recent Comments"
 msgstr "最近のコメント"
 
+#. translators: comments widget: 1: comment author, 2: post link
 #: wp-includes/default-widgets.php:873
 msgctxt "widgets"
 msgid "%1$s on %2$s"
@@ -2451,115 +2471,136 @@ msgstr "%s へのコメント"
 msgid "Protected Comments: Please enter your password to view comments."
 msgstr "コメント保護中: 表示するにはパスワードを入力してください。"
 
-#: wp-includes/formatting.php:37 wp-includes/formatting.php:3708
+#. translators: opening curly double quote
+#: wp-includes/formatting.php:37 wp-includes/formatting.php:3717
 msgctxt "opening curly double quote"
 msgid "&#8220;"
 msgstr "&#8220;"
 
+#. translators: closing curly double quote
 #: wp-includes/formatting.php:39
 msgctxt "closing curly double quote"
 msgid "&#8221;"
 msgstr "&#8221;"
 
+#. translators: apostrophe, for example in 'cause or can't
 #: wp-includes/formatting.php:42
 msgctxt "apostrophe"
 msgid "&#8217;"
 msgstr "&#8217;"
 
+#. translators: prime, for example in 9' (nine feet)
 #: wp-includes/formatting.php:45
 msgctxt "prime"
 msgid "&#8242;"
 msgstr "&#8242;"
 
+#. translators: double prime, for example in 9" (nine inches)
 #: wp-includes/formatting.php:47
 msgctxt "double prime"
 msgid "&#8243;"
 msgstr "&#8243;"
 
+#. translators: opening curly single quote
 #: wp-includes/formatting.php:50
 msgctxt "opening curly single quote"
 msgid "&#8216;"
 msgstr "&#8216;"
 
+#. translators: closing curly single quote
 #: wp-includes/formatting.php:52
 msgctxt "closing curly single quote"
 msgid "&#8217;"
 msgstr "&#8217;"
 
+#. translators: en dash
 #: wp-includes/formatting.php:55
 msgctxt "en dash"
 msgid "&#8211;"
 msgstr "&#8211;"
 
+#. translators: em dash
 #: wp-includes/formatting.php:57
 msgctxt "em dash"
 msgid "&#8212;"
 msgstr "&#8212;"
 
-#: wp-includes/formatting.php:2348
+#. translators: min=minute
+#: wp-includes/formatting.php:2357
 msgid "%s min"
 msgid_plural "%s mins"
 msgstr[0] "%s分"
 
-#: wp-includes/formatting.php:2353
+#: wp-includes/formatting.php:2362
 msgid "%s hour"
 msgid_plural "%s hours"
 msgstr[0] "%s時間"
 
-#: wp-includes/formatting.php:2358
+#: wp-includes/formatting.php:2367
 msgid "%s day"
 msgid_plural "%s days"
 msgstr[0] "%s日"
 
-#: wp-includes/formatting.php:2363
+#: wp-includes/formatting.php:2372
 msgid "%s week"
 msgid_plural "%s weeks"
 msgstr[0] "%s週"
 
-#: wp-includes/formatting.php:2368
+#: wp-includes/formatting.php:2377
 msgid "%s month"
 msgid_plural "%s months"
 msgstr[0] "%sか月"
 
-#: wp-includes/formatting.php:2373
+#: wp-includes/formatting.php:2382
 msgid "%s year"
 msgid_plural "%s years"
 msgstr[0] "%s年"
 
-#: wp-includes/formatting.php:2450 wp-includes/general-template.php:2490
+#: wp-includes/formatting.php:2459 wp-includes/general-template.php:2490
 msgid "&hellip;"
 msgstr "&hellip;"
 
-#: wp-includes/formatting.php:2455 wp-includes/script-loader.php:374
+#. translators: If your word count is based on single characters (East Asian
+#. characters),
+#. enter 'characters'. Otherwise, enter 'words'. Do not translate into your
+#. own language.
+#. translators: If your word count is based on single characters (East Asian
+#. characters),
+#. enter 'characters'. Otherwise, enter 'words'. Do not translate into
+#. your own language.
+#: wp-includes/formatting.php:2464 wp-includes/script-loader.php:374
 msgctxt "word count: words or characters?"
 msgid "words"
 msgstr "characters"
 
-#: wp-includes/formatting.php:3139
+#: wp-includes/formatting.php:3148
 msgid "The email address entered did not appear to be a valid email address. Please enter a valid email address."
 msgstr "入力されたメールアドレスの形式が間違っているようです。正しいアドレスを記入してください。"
 
-#: wp-includes/formatting.php:3226
+#: wp-includes/formatting.php:3235
 msgid "The WordPress address you entered did not appear to be a valid URL. Please enter a valid URL."
 msgstr "入力された WordPress のアドレスは正しい URL の形式ではないようです。正しい URL を記入してください。"
 
-#: wp-includes/formatting.php:3236
+#: wp-includes/formatting.php:3245
 msgid "The Site address you entered did not appear to be a valid URL. Please enter a valid URL."
 msgstr "入力されたサイトのアドレスは正しい URL の形式ではないようです。正しい URL を記入してください。"
 
-#: wp-includes/formatting.php:3277
+#: wp-includes/formatting.php:3286
 msgid "The timezone you have entered is not valid. Please select a valid timezone."
 msgstr "入力されたタイムゾーンは有効ではありません。有効なタイムゾーンを選択してください。"
 
-#: wp-includes/formatting.php:3468
+#. translators: used to join items in a list with more than 2 items
+#: wp-includes/formatting.php:3477
 msgid "%s, %s"
 msgstr "%s、%s"
 
-#: wp-includes/formatting.php:3470
+#. translators: used to join last two items in a list with more than 2 times
+#: wp-includes/formatting.php:3479
 msgid "%s, and %s"
 msgstr "%s、%s"
 
-#: wp-includes/formatting.php:3472
+#. translators: used to join items in a list with only 2 items
+#: wp-includes/formatting.php:3481
 msgid "%s and %s"
 msgstr "%s、%s"
 
@@ -2708,8 +2749,8 @@ msgctxt "submit button"
 msgid "Search"
 msgstr "検索"
 
-#: wp-includes/general-template.php:284 wp-login.php:543 wp-login.php:608
-#: wp-login.php:650 wp-login.php:732
+#: wp-includes/general-template.php:284 wp-login.php:543 wp-login.php:611
+#: wp-login.php:654 wp-login.php:736
 msgid "Log in"
 msgstr "ログイン"
 
@@ -2717,24 +2758,24 @@ msgstr "ログイン"
 msgid "Log out"
 msgstr "ログアウト"
 
-#: wp-includes/general-template.php:405 wp-login.php:710 wp-login.php:876
+#: wp-includes/general-template.php:405 wp-login.php:714 wp-login.php:880
 msgid "Username"
 msgstr "ユーザー名"
 
-#: wp-includes/general-template.php:406 wp-login.php:880
+#: wp-includes/general-template.php:406 wp-login.php:884
 msgid "Password"
 msgstr "パスワード"
 
-#: wp-includes/general-template.php:407 wp-login.php:891
+#: wp-includes/general-template.php:407 wp-login.php:895
 msgid "Remember Me"
 msgstr "ログイン状態を保存する"
 
-#: wp-includes/general-template.php:408 wp-login.php:867 wp-login.php:893
+#: wp-includes/general-template.php:408 wp-login.php:871 wp-login.php:897
 msgid "Log In"
 msgstr "ログイン"
 
-#: wp-includes/general-template.php:540 wp-login.php:546 wp-login.php:653
-#: wp-login.php:728 wp-login.php:910
+#: wp-includes/general-template.php:540 wp-login.php:546 wp-login.php:657
+#: wp-login.php:732 wp-login.php:914
 msgid "Register"
 msgstr "登録"
 
@@ -2750,6 +2791,7 @@ msgstr "<code>bloginfo()</code> 関数群内の <code>%s</code> オプション�
 msgid "Use the <code>%s</code> option instead."
 msgstr "かわりに <code>%s</code> オプションを使ってください。"
 
+#. translators: 1: separator, 2: search phrase
 #: wp-includes/general-template.php:826
 msgid "Search Results %1$s %2$s"
 msgstr "検索結果: %1$s %2$s"
@@ -2758,10 +2800,12 @@ msgstr "検索結果: %1$s %2$s"
 msgid "Page not found"
 msgstr "ページが見つかりませんでした"
 
+#. translators: 1: month name, 2: 4-digit year
 #: wp-includes/general-template.php:1260
 msgid "%1$s %2$d"
 msgstr "%2$d年%1$s"
 
+#. translators: Calendar caption: 1: month name, 2: 4-digit year
 #: wp-includes/general-template.php:1462
 msgctxt "calendar caption"
 msgid "%1$s %2$s"
@@ -2771,39 +2815,48 @@ msgstr "%2$s年%1$s"
 msgid "View posts for %1$s %2$s"
 msgstr "%2$s年%1$sの投稿を表示"
 
+#. translators: Separator between blog name and feed type in feed links
 #: wp-includes/general-template.php:2060 wp-includes/general-template.php:2083
 msgctxt "feed link"
 msgid "&raquo;"
 msgstr "&raquo;"
 
+#. translators: 1: blog title, 2: separator (raquo)
 #: wp-includes/general-template.php:2062
 msgid "%1$s %2$s Feed"
 msgstr "%1$s %2$s フィード"
 
+#. translators: 1: blog title, 2: separator (raquo)
 #: wp-includes/general-template.php:2064
 msgid "%1$s %2$s Comments Feed"
 msgstr "%1$s %2$s コメントフィード"
 
+#. translators: 1: blog name, 2: separator(raquo), 3: post title
 #: wp-includes/general-template.php:2085
 msgid "%1$s %2$s %3$s Comments Feed"
 msgstr "%1$s %2$s %3$s のコメントのフィード"
 
+#. translators: 1: blog name, 2: separator(raquo), 3: category name
 #: wp-includes/general-template.php:2087
 msgid "%1$s %2$s %3$s Category Feed"
 msgstr "%1$s %2$s %3$s カテゴリーのフィード"
 
+#. translators: 1: blog name, 2: separator(raquo), 3: tag name
 #: wp-includes/general-template.php:2089
 msgid "%1$s %2$s %3$s Tag Feed"
 msgstr "%1$s %2$s %3$s タグのフィード"
 
+#. translators: 1: blog name, 2: separator(raquo), 3: author name
 #: wp-includes/general-template.php:2091
 msgid "%1$s %2$s Posts by %3$s Feed"
 msgstr "%1$s %2$s %3$s による投稿のフィード"
 
+#. translators: 1: blog name, 2: separator(raquo), 3: search phrase
 #: wp-includes/general-template.php:2093
 msgid "%1$s %2$s Search Results for &#8220;%3$s&#8221; Feed"
 msgstr "%1$s %2$s 検索結果: &#8220;%3$s&#8221; フィード"
 
+#. translators: 1: blog name, 2: separator(raquo), 3: post type name
 #: wp-includes/general-template.php:2095
 msgid "%1$s %2$s %3$s Feed"
 msgstr "%1$s %2$s %3$s フィード"
@@ -3012,189 +3065,234 @@ msgstr "<strong>エラー</strong>: <code>wp-config.php</code> 内の <code>$tab
 msgid "The site you have requested is not installed properly. Please contact the system administrator."
 msgstr "リクエストされたサイトは正常にインストールされていません。システム管理者にお問い合わせください。"
 
+#. translators: weekday
 #: wp-includes/locale.php:99 wp-includes/locale.php:109
 #: wp-includes/locale.php:122
 msgid "Sunday"
 msgstr "日曜日"
 
+#. translators: weekday
 #: wp-includes/locale.php:100 wp-includes/locale.php:110
 #: wp-includes/locale.php:123
 msgid "Monday"
 msgstr "月曜日"
 
+#. translators: weekday
 #: wp-includes/locale.php:101 wp-includes/locale.php:111
 #: wp-includes/locale.php:124
 msgid "Tuesday"
 msgstr "火曜日"
 
+#. translators: weekday
 #: wp-includes/locale.php:102 wp-includes/locale.php:112
 #: wp-includes/locale.php:125
 msgid "Wednesday"
 msgstr "水曜日"
 
+#. translators: weekday
 #: wp-includes/locale.php:103 wp-includes/locale.php:113
 #: wp-includes/locale.php:126
 msgid "Thursday"
 msgstr "木曜日"
 
+#. translators: weekday
 #: wp-includes/locale.php:104 wp-includes/locale.php:114
 #: wp-includes/locale.php:127
 msgid "Friday"
 msgstr "金曜日"
 
+#. translators: weekday
 #: wp-includes/locale.php:105 wp-includes/locale.php:115
 #: wp-includes/locale.php:128
 msgid "Saturday"
 msgstr "土曜日"
 
+#. translators: one-letter abbreviation of the weekday
 #: wp-includes/locale.php:109
 msgid "S_Sunday_initial"
 msgstr "日_Sunday_initial"
 
+#. translators: one-letter abbreviation of the weekday
 #: wp-includes/locale.php:110
 msgid "M_Monday_initial"
 msgstr "月_Monday_initial"
 
+#. translators: one-letter abbreviation of the weekday
 #: wp-includes/locale.php:111
 msgid "T_Tuesday_initial"
 msgstr "火_Tuesday_initial"
 
+#. translators: one-letter abbreviation of the weekday
 #: wp-includes/locale.php:112
 msgid "W_Wednesday_initial"
 msgstr "水_Wednesday_initial"
 
+#. translators: one-letter abbreviation of the weekday
 #: wp-includes/locale.php:113
 msgid "T_Thursday_initial"
 msgstr "木_Thursday_initial"
 
+#. translators: one-letter abbreviation of the weekday
 #: wp-includes/locale.php:114
 msgid "F_Friday_initial"
 msgstr "金_Friday_initial"
 
+#. translators: one-letter abbreviation of the weekday
 #: wp-includes/locale.php:115
 msgid "S_Saturday_initial"
 msgstr "土_Saturday_initial"
 
+#. translators: three-letter abbreviation of the weekday
 #: wp-includes/locale.php:122
 msgid "Sun"
 msgstr "日"
 
+#. translators: three-letter abbreviation of the weekday
 #: wp-includes/locale.php:123
 msgid "Mon"
 msgstr "月"
 
+#. translators: three-letter abbreviation of the weekday
 #: wp-includes/locale.php:124
 msgid "Tue"
 msgstr "火"
 
+#. translators: three-letter abbreviation of the weekday
 #: wp-includes/locale.php:125
 msgid "Wed"
 msgstr "水"
 
+#. translators: three-letter abbreviation of the weekday
 #: wp-includes/locale.php:126
 msgid "Thu"
 msgstr "木"
 
+#. translators: three-letter abbreviation of the weekday
 #: wp-includes/locale.php:127
 msgid "Fri"
 msgstr "金"
 
+#. translators: three-letter abbreviation of the weekday
 #: wp-includes/locale.php:128
 msgid "Sat"
 msgstr "土"
 
+#. translators: month name
 #: wp-includes/locale.php:131 wp-includes/locale.php:146
 msgid "January"
 msgstr "1月"
 
+#. translators: month name
 #: wp-includes/locale.php:132 wp-includes/locale.php:147
 msgid "February"
 msgstr "2月"
 
+#. translators: month name
 #: wp-includes/locale.php:133 wp-includes/locale.php:148
 msgid "March"
 msgstr "3月"
 
+#. translators: month name
 #: wp-includes/locale.php:134 wp-includes/locale.php:149
 msgid "April"
 msgstr "4月"
 
+#. translators: month name
 #: wp-includes/locale.php:135 wp-includes/locale.php:150
 msgid "May"
 msgstr "5月"
 
+#. translators: month name
 #: wp-includes/locale.php:136 wp-includes/locale.php:151
 msgid "June"
 msgstr "6月"
 
+#. translators: month name
 #: wp-includes/locale.php:137 wp-includes/locale.php:152
 msgid "July"
 msgstr "7月"
 
+#. translators: month name
 #: wp-includes/locale.php:138 wp-includes/locale.php:153
 msgid "August"
 msgstr "8月"
 
+#. translators: month name
 #: wp-includes/locale.php:139 wp-includes/locale.php:154
 msgid "September"
 msgstr "9月"
 
+#. translators: month name
 #: wp-includes/locale.php:140 wp-includes/locale.php:155
 msgid "October"
 msgstr "10月"
 
+#. translators: month name
 #: wp-includes/locale.php:141 wp-includes/locale.php:156
 msgid "November"
 msgstr "11月"
 
+#. translators: month name
 #: wp-includes/locale.php:142 wp-includes/locale.php:157
 msgid "December"
 msgstr "12月"
 
+#. translators: three-letter abbreviation of the month
 #: wp-includes/locale.php:146
 msgid "Jan_January_abbreviation"
 msgstr "1月_January_abbreviation"
 
+#. translators: three-letter abbreviation of the month
 #: wp-includes/locale.php:147
 msgid "Feb_February_abbreviation"
 msgstr "2月_February_abbreviation"
 
+#. translators: three-letter abbreviation of the month
 #: wp-includes/locale.php:148
 msgid "Mar_March_abbreviation"
 msgstr "3月_March_abbreviation"
 
+#. translators: three-letter abbreviation of the month
 #: wp-includes/locale.php:149
 msgid "Apr_April_abbreviation"
 msgstr "4月_April_abbreviation"
 
+#. translators: three-letter abbreviation of the month
 #: wp-includes/locale.php:150
 msgid "May_May_abbreviation"
 msgstr "5月_May_abbreviation"
 
+#. translators: three-letter abbreviation of the month
 #: wp-includes/locale.php:151
 msgid "Jun_June_abbreviation"
 msgstr "6月_June_abbreviation"
 
+#. translators: three-letter abbreviation of the month
 #: wp-includes/locale.php:152
 msgid "Jul_July_abbreviation"
 msgstr "7月_July_abbreviation"
 
+#. translators: three-letter abbreviation of the month
 #: wp-includes/locale.php:153
 msgid "Aug_August_abbreviation"
 msgstr "8月_August_abbreviation"
 
+#. translators: three-letter abbreviation of the month
 #: wp-includes/locale.php:154
 msgid "Sep_September_abbreviation"
 msgstr "9月_September_abbreviation"
 
+#. translators: three-letter abbreviation of the month
 #: wp-includes/locale.php:155
 msgid "Oct_October_abbreviation"
 msgstr "10月_October_abbreviation"
 
+#. translators: three-letter abbreviation of the month
 #: wp-includes/locale.php:156
 msgid "Nov_November_abbreviation"
 msgstr "11月_November_abbreviation"
 
+#. translators: three-letter abbreviation of the month
 #: wp-includes/locale.php:157
 msgid "Dec_December_abbreviation"
 msgstr "12月_December_abbreviation"
@@ -3215,27 +3313,35 @@ msgstr "AM"
 msgid "PM"
 msgstr "PM"
 
+#. translators: $thousands_sep argument for http:php.net/number_format, default
+#. is ,
 #: wp-includes/locale.php:173
 msgid "number_format_thousands_sep"
 msgstr "number_format_thousands_sep"
 
+#. translators: $dec_point argument for http:php.net/number_format, default is
+#. .
 #: wp-includes/locale.php:177
 msgid "number_format_decimal_point"
 msgstr "number_format_decimal_point"
 
+#. translators: 'rtl' or 'ltr'. This sets the text direction for WordPress.
 #: wp-includes/locale.php:184
 msgctxt "text direction"
 msgid "ltr"
 msgstr "ltr"
 
+#. translators: localized date format, see http:php.net/date
 #: wp-includes/locale.php:351
 msgid "F j, Y"
 msgstr "Y年n月j日"
 
+#. translators: localized time format, see http:php.net/date
 #: wp-includes/locale.php:353
 msgid "g:i a"
 msgstr "g:i A"
 
+#. translators: localized date and time format, see http:php.net/date
 #: wp-includes/locale.php:355
 msgid "F j, Y g:i a"
 msgstr "Y年n月j日 g:i A"
@@ -3260,7 +3366,7 @@ msgstr "ファイルを選択"
 msgid "Maximum upload file size: %d%s."
 msgstr "最大アップロードファイルサイズ: %d%s。"
 
-#: wp-includes/media-template.php:211 wp-includes/media.php:2825
+#: wp-includes/media-template.php:211 wp-includes/media.php:2829
 msgid "Suggested image dimensions:"
 msgstr "推奨画像サイズ:"
 
@@ -3300,7 +3406,7 @@ msgstr "このメディアの説明を書く"
 msgid "Attachment Details"
 msgstr "添付ファイルの詳細"
 
-#: wp-includes/media-template.php:317 wp-includes/media.php:2816
+#: wp-includes/media-template.php:317 wp-includes/media.php:2820
 msgid "Edit Image"
 msgstr "画像を編集"
 
@@ -3373,22 +3479,22 @@ msgid "Size"
 msgstr "サイズ"
 
 #: wp-includes/media-template.php:463 wp-includes/media-template.php:709
-#: wp-includes/media.php:2547
+#: wp-includes/media.php:2551
 msgid "Thumbnail"
 msgstr "サムネイル"
 
 #: wp-includes/media-template.php:464 wp-includes/media-template.php:710
-#: wp-includes/media.php:2548
+#: wp-includes/media.php:2552
 msgid "Medium"
 msgstr "中"
 
 #: wp-includes/media-template.php:465 wp-includes/media-template.php:711
-#: wp-includes/media.php:2549
+#: wp-includes/media.php:2553
 msgid "Large"
 msgstr "大サイズ"
 
 #: wp-includes/media-template.php:466 wp-includes/media-template.php:712
-#: wp-includes/media.php:2550
+#: wp-includes/media.php:2554
 msgid "Full Size"
 msgstr "フルサイズ"
 
@@ -3436,7 +3542,7 @@ msgstr "画像の URL"
 msgid "Edit Original"
 msgstr "オリジナルを編集"
 
-#: wp-includes/media-template.php:658 wp-includes/media.php:2768
+#: wp-includes/media-template.php:658 wp-includes/media.php:2772
 msgid "Replace"
 msgstr "置換"
 
@@ -3510,108 +3616,113 @@ msgid "There are no associated subtitles."
 msgstr "関連付けられた字幕がありません。"
 
 #: wp-includes/media-template.php:1004 wp-includes/media-template.php:1048
-#: wp-includes/media.php:2790
+#: wp-includes/media.php:2794
 msgid "No items found."
 msgstr "アイテムは見つかりませんでした。"
 
-#: wp-includes/media.php:1424
+#: wp-includes/media.php:1428
 msgid "Artist"
 msgstr "アーティスト"
 
-#: wp-includes/media.php:1425
+#: wp-includes/media.php:1429
 msgid "Album"
 msgstr "アルバム"
 
-#: wp-includes/media.php:1429
+#: wp-includes/media.php:1433
 msgid "Genre"
 msgstr "ジャンル"
 
-#: wp-includes/media.php:1430
+#: wp-includes/media.php:1434
 msgid "Year"
 msgstr "年"
 
-#: wp-includes/media.php:1431
+#: wp-includes/media.php:1435
 msgctxt "video or audio"
 msgid "Length"
 msgstr "時間"
 
-#: wp-includes/media.php:2346
+#: wp-includes/media.php:2350
 msgid "No editor could be selected."
 msgstr "エディターを選択できませんでした。"
 
-#: wp-includes/media.php:2763
+#: wp-includes/media.php:2767
 msgid "Add Media"
 msgstr "メディアを追加"
 
-#: wp-includes/media.php:2765
+#: wp-includes/media.php:2769
 msgid "Select"
 msgstr "選択"
 
-#: wp-includes/media.php:2770
+#: wp-includes/media.php:2774
 msgid "Back"
 msgstr "戻る"
 
-#: wp-includes/media.php:2775
+#. translators: This is a would-be plural string used in the media manager.
+#. If there is not a word you can use in your language to avoid issues
+#. with the
+#. lack of plural support here, turn it into "selected: %d" then translate
+#. it.
+#: wp-includes/media.php:2779
 msgid "%d selected"
 msgstr "%d点を選択済"
 
-#: wp-includes/media.php:2776
+#: wp-includes/media.php:2780
 msgid "Drag and drop to reorder images."
 msgstr "画像を並べ替えるにはドラッグ & ドロップ操作をしてください。"
 
-#: wp-includes/media.php:2779
+#: wp-includes/media.php:2783
 msgid "Upload Files"
 msgstr "ファイルをアップロード"
 
-#: wp-includes/media.php:2780
+#: wp-includes/media.php:2784
 msgid "Upload Images"
 msgstr "画像をアップロード"
 
-#: wp-includes/media.php:2783
+#: wp-includes/media.php:2787
 msgid "Media Library"
 msgstr "メディアライブラリ"
 
-#: wp-includes/media.php:2784
+#: wp-includes/media.php:2788
 msgid "Insert Media"
 msgstr "メディアを挿入"
 
-#: wp-includes/media.php:2785
+#: wp-includes/media.php:2789
 msgid "Create a new gallery"
 msgstr "ギャラリーを作成"
 
-#: wp-includes/media.php:2786
+#: wp-includes/media.php:2790
 msgid "Create a new playlist"
 msgstr "プレイリストを新規作成"
 
-#: wp-includes/media.php:2787
+#: wp-includes/media.php:2791
 msgid "Create a new video playlist"
 msgstr "動画プレイリストを新規作成"
 
-#: wp-includes/media.php:2788
+#: wp-includes/media.php:2792
 msgid "&#8592; Return to library"
 msgstr "&#8592; ライブラリへ戻る"
 
-#: wp-includes/media.php:2789
+#: wp-includes/media.php:2793
 msgid "All media items"
 msgstr "すべてのメディア"
 
-#: wp-includes/media.php:2791
+#: wp-includes/media.php:2795
 msgid "Insert into page"
 msgstr "固定ページに挿入"
 
-#: wp-includes/media.php:2791
+#: wp-includes/media.php:2795
 msgid "Insert into post"
 msgstr "投稿に挿入"
 
-#: wp-includes/media.php:2792
+#: wp-includes/media.php:2796
 msgid "Uploaded to this page"
 msgstr "この固定ページへのアップロード"
 
-#: wp-includes/media.php:2792
+#: wp-includes/media.php:2796
 msgid "Uploaded to this post"
 msgstr "この投稿へのアップロード"
 
-#: wp-includes/media.php:2793
+#: wp-includes/media.php:2797
 msgid ""
 "You are about to permanently delete this item.\n"
 "  'Cancel' to stop, 'OK' to delete."
@@ -3619,184 +3730,184 @@ msgstr ""
 "この項目を完全に削除しようとしています。\n"
 "中止するには 'キャンセル' を、削除するには 'OK' をクリックしてください。"
 
-#: wp-includes/media.php:2796
+#: wp-includes/media.php:2800
 msgid "Insert from URL"
 msgstr "URL から挿入"
 
-#: wp-includes/media.php:2799
+#: wp-includes/media.php:2803
 msgid "Set Featured Image"
 msgstr "アイキャッチ画像を設定"
 
-#: wp-includes/media.php:2800
+#: wp-includes/media.php:2804
 msgid "Set featured image"
 msgstr "アイキャッチ画像を設定"
 
-#: wp-includes/media.php:2803
+#: wp-includes/media.php:2807
 msgid "Create Gallery"
 msgstr "ギャラリーを作成"
 
-#: wp-includes/media.php:2804
+#: wp-includes/media.php:2808
 msgid "Edit Gallery"
 msgstr "ギャラリーを編集"
 
-#: wp-includes/media.php:2805
+#: wp-includes/media.php:2809
 msgid "&#8592; Cancel Gallery"
 msgstr "&#8592; ギャラリーをキャンセル"
 
-#: wp-includes/media.php:2806
+#: wp-includes/media.php:2810
 msgid "Insert gallery"
 msgstr "ギャラリーを挿入"
 
-#: wp-includes/media.php:2807
+#: wp-includes/media.php:2811
 msgid "Update gallery"
 msgstr "ギャラリーを更新"
 
-#: wp-includes/media.php:2808
+#: wp-includes/media.php:2812
 msgid "Add to gallery"
 msgstr "ギャラリーに追加"
 
-#: wp-includes/media.php:2809
+#: wp-includes/media.php:2813
 msgid "Add to Gallery"
 msgstr "ギャラリーに追加"
 
-#: wp-includes/media.php:2810
+#: wp-includes/media.php:2814
 msgid "Reverse order"
 msgstr "順序を逆にする"
 
-#: wp-includes/media.php:2813
+#: wp-includes/media.php:2817
 msgid "Image Details"
 msgstr "画像詳細"
 
-#: wp-includes/media.php:2814
+#: wp-includes/media.php:2818
 msgid "Replace Image"
 msgstr "画像を置き換える"
 
-#: wp-includes/media.php:2815 wp-includes/media.php:2832
-#: wp-includes/media.php:2838
+#: wp-includes/media.php:2819 wp-includes/media.php:2836
+#: wp-includes/media.php:2842
 msgid "Cancel Edit"
 msgstr "編集をキャンセル"
 
-#: wp-includes/media.php:2819
+#: wp-includes/media.php:2823
 msgid "Choose Image"
 msgstr "画像の選択"
 
-#: wp-includes/media.php:2820
+#: wp-includes/media.php:2824
 msgid "Select and Crop"
 msgstr "選択して切り抜く"
 
-#: wp-includes/media.php:2821
+#: wp-includes/media.php:2825
 msgid "Skip Cropping"
 msgstr "切り抜かない"
 
-#: wp-includes/media.php:2822
+#: wp-includes/media.php:2826
 msgid "Crop Image"
 msgstr "画像切り抜き"
 
-#: wp-includes/media.php:2823
+#: wp-includes/media.php:2827
 msgid "Crop your image"
 msgstr "画像を切り抜き"
 
-#: wp-includes/media.php:2824
+#: wp-includes/media.php:2828
 msgid "Cropping&hellip;"
 msgstr "切り抜いています…"
 
-#: wp-includes/media.php:2826
+#: wp-includes/media.php:2830
 msgid "There has been an error cropping your image."
 msgstr "画像を切り抜く際にエラーが発生しました。"
 
-#: wp-includes/media.php:2829
+#: wp-includes/media.php:2833
 msgid "Audio Details"
 msgstr "音声ファイル詳細"
 
-#: wp-includes/media.php:2830
+#: wp-includes/media.php:2834
 msgid "Replace Audio"
 msgstr "音声ファイルを置き換える"
 
-#: wp-includes/media.php:2831
+#: wp-includes/media.php:2835
 msgid "Add Audio Source"
 msgstr "音声のソースを追加"
 
-#: wp-includes/media.php:2835
+#: wp-includes/media.php:2839
 msgid "Video Details"
 msgstr "動画詳細"
 
-#: wp-includes/media.php:2836
+#: wp-includes/media.php:2840
 msgid "Replace Video"
 msgstr "動画を置き換える"
 
-#: wp-includes/media.php:2837
+#: wp-includes/media.php:2841
 msgid "Add Video Source"
 msgstr "動画のソースを追加"
 
-#: wp-includes/media.php:2839
+#: wp-includes/media.php:2843
 msgid "Select Poster Image"
 msgstr "ポスター画像を選択"
 
-#: wp-includes/media.php:2840
+#: wp-includes/media.php:2844
 msgid "Add Subtitles"
 msgstr "字幕を追加"
 
-#: wp-includes/media.php:2843
+#: wp-includes/media.php:2847
 msgid "Drag and drop to reorder tracks."
 msgstr "トラックの順序を変更するにはドラッグ & ドロップしてください。"
 
-#: wp-includes/media.php:2844
+#: wp-includes/media.php:2848
 msgid "Create Audio Playlist"
 msgstr "音声プレイリストを作成"
 
-#: wp-includes/media.php:2845
+#: wp-includes/media.php:2849
 msgid "Edit Audio Playlist"
 msgstr "音声プレイリストを編集"
 
-#: wp-includes/media.php:2846
+#: wp-includes/media.php:2850
 msgid "&#8592; Cancel Audio Playlist"
 msgstr "&#8592;  音声プレイリストをキャンセル"
 
-#: wp-includes/media.php:2847
+#: wp-includes/media.php:2851
 msgid "Insert audio playlist"
 msgstr "音声プレイリストを挿入"
 
-#: wp-includes/media.php:2848
+#: wp-includes/media.php:2852
 msgid "Update audio playlist"
 msgstr "音声プレイリストを更新"
 
-#: wp-includes/media.php:2849
+#: wp-includes/media.php:2853
 msgid "Add to audio playlist"
 msgstr "音声プレイリストを追加"
 
-#: wp-includes/media.php:2850
+#: wp-includes/media.php:2854
 msgid "Add to Audio Playlist"
 msgstr "音声プレイリストを追加"
 
-#: wp-includes/media.php:2853
+#: wp-includes/media.php:2857
 msgid "Drag and drop to reorder videos."
 msgstr "動画の順序を変更するにはドラッグ & ドロップしてください。"
 
-#: wp-includes/media.php:2854
+#: wp-includes/media.php:2858
 msgid "Create Video Playlist"
 msgstr "動画プレイリストを作成"
 
-#: wp-includes/media.php:2855
+#: wp-includes/media.php:2859
 msgid "Edit Video Playlist"
 msgstr "動画プレイリストを編集"
 
-#: wp-includes/media.php:2856
+#: wp-includes/media.php:2860
 msgid "&#8592; Cancel Video Playlist"
 msgstr "&#8592; 動画プレイリストをキャンセル"
 
-#: wp-includes/media.php:2857
+#: wp-includes/media.php:2861
 msgid "Insert video playlist"
 msgstr "動画プレイリストを挿入"
 
-#: wp-includes/media.php:2858
+#: wp-includes/media.php:2862
 msgid "Update video playlist"
 msgstr "動画プレイリストを更新"
 
-#: wp-includes/media.php:2859
+#: wp-includes/media.php:2863
 msgid "Add to video playlist"
 msgstr "動画プレイリストに追加"
 
-#: wp-includes/media.php:2860
+#: wp-includes/media.php:2864
 msgid "Add to Video Playlist"
 msgstr "動画プレイリストに追加"
 
@@ -4180,6 +4291,8 @@ msgstr "最初のパラメーターを使って検証されるノンスアクシ
 msgid "New trackback on your post \"%s\""
 msgstr "投稿 \"%s\" に新しいトラックバックがありました"
 
+#. translators: 1: website name, 2: author IP, 3: author domain
+#. translators: 1: comment author, 2: author IP, 3: author domain
 #: wp-includes/pluggable.php:1329 wp-includes/pluggable.php:1339
 msgid "Website: %1$s (IP: %2$s , %3$s)"
 msgstr "ウェブサイト: %1$s (IP: %2$s , %3$s)"
@@ -4198,6 +4311,7 @@ msgstr "抜粋: "
 msgid "You can see all trackbacks on this post here: "
 msgstr "この投稿へのすべてのトラックバックは次の URL で見ることができます: "
 
+#. translators: 1: blog name, 2: post title
 #: wp-includes/pluggable.php:1334
 msgid "[%1$s] Trackback: \"%2$s\""
 msgstr "[%1$s] トラックバック: \"%2$s\""
@@ -4210,6 +4324,7 @@ msgstr "投稿 \"%s\" に新しいピンバックがありました"
 msgid "You can see all pingbacks on this post here: "
 msgstr "この投稿へのすべてのピンバックは次の URL で見ることができます: "
 
+#. translators: 1: blog name, 2: post title
 #: wp-includes/pluggable.php:1344
 msgid "[%1$s] Pingback: \"%2$s\""
 msgstr "[%1$s] ピンバック: \"%2$s\""
@@ -4218,6 +4333,7 @@ msgstr "[%1$s] ピンバック: \"%2$s\""
 msgid "New comment on your post \"%s\""
 msgstr "投稿 \"%s\" に新しいコメントがありました"
 
+#. translators: 1: comment author, 2: author IP, 3: author domain
 #: wp-includes/pluggable.php:1349 wp-includes/pluggable.php:1478
 msgid "Author : %1$s (IP: %2$s , %3$s)"
 msgstr "投稿者: %1$s (IP: %2$s , %3$s)"
@@ -4238,6 +4354,7 @@ msgstr "コメント: "
 msgid "You can see all comments on this post here: "
 msgstr "この投稿へのすべてのコメントは次の URL で見ることができます: "
 
+#. translators: 1: blog name, 2: post title
 #: wp-includes/pluggable.php:1356
 msgid "[%1$s] Comment: \"%2$s\""
 msgstr "[%1$s] コメント: \"%2$s\""
@@ -4426,26 +4543,32 @@ msgstr "このコンテンツはパスワードで保護されています。閲
 msgid "Submit"
 msgstr "送信"
 
+#. translators: revision date format, see http:php.net/date
 #: wp-includes/post-template.php:1590
 msgctxt "revision date format"
 msgid "j F, Y @ G:i"
 msgstr "Y年n月j日 @ G:i"
 
+#. translators: 1: date
 #: wp-includes/post-template.php:1592
 msgctxt "post revision title extra"
 msgid "%1$s [Autosave]"
 msgstr "%1$s [自動保存]"
 
+#. translators: 1: date
 #: wp-includes/post-template.php:1594
 msgctxt "post revision title extra"
 msgid "%1$s [Current Revision]"
 msgstr "%1$s [現在のリビジョン]"
 
+#. translators: revision date format, see http:php.net/date
 #: wp-includes/post-template.php:1628
 msgctxt "revision date format"
 msgid "j F, Y @ G:i:s"
 msgstr "Y年n月j日 @ G:i:s"
 
+#. translators: post revision title: 1: author avatar, 2: author name, 3: time
+#. ago, 4: date
 #: wp-includes/post-template.php:1638
 msgctxt "post revision title"
 msgid "%1$s %2$s, %3$s ago (%4$s)"
@@ -4828,7 +4951,7 @@ msgstr "http://wpdocs.sourceforge.jp/"
 msgid "Support Forums"
 msgstr "サポートフォーラム"
 
-#: wp-includes/admin-bar.php:146 wp-login.php:780
+#: wp-includes/admin-bar.php:146 wp-login.php:784
 msgid "https://wordpress.org/support/"
 msgstr "http://ja.forums.wordpress.org/"
 
@@ -4965,7 +5088,7 @@ msgid "Header"
 msgstr "ヘッダー"
 
 #: wp-includes/admin-bar.php:716 wp-includes/class-wp-editor.php:1412
-#: wp-includes/media.php:2764
+#: wp-includes/media.php:2768
 msgid "Search"
 msgstr "検索"
 
@@ -5182,7 +5305,7 @@ msgstr "アップロード"
 #: wp-includes/media-template.php:262 wp-includes/media-template.php:817
 #: wp-includes/media-template.php:831 wp-includes/media-template.php:901
 #: wp-includes/media-template.php:913 wp-includes/media-template.php:934
-#: wp-includes/media-template.php:966 wp-includes/media.php:2769
+#: wp-includes/media-template.php:966 wp-includes/media.php:2773
 msgid "Remove"
 msgstr "削除"
 
@@ -5265,11 +5388,13 @@ msgstr "<strong>新規追加</strong>をクリックした後に、好きなよ�
 msgid "Current header"
 msgstr "現在のヘッダー"
 
+#. translators: Hide as in hide header image via the Customizer
 #: wp-includes/class-wp-customize-control.php:873
 msgctxt "custom header"
 msgid "Hide image"
 msgstr "画像を非表示"
 
+#. translators: New as in add new header image via the Customizer
 #: wp-includes/class-wp-customize-control.php:875
 msgctxt "header image"
 msgid "Add new image"
@@ -5428,6 +5553,7 @@ msgstr "フロントページ"
 msgid "Posts page"
 msgstr "投稿ページ"
 
+#. translators: %s: sidebar name
 #: wp-includes/class-wp-customize-widgets.php:462
 msgid "Widgets: %s"
 msgstr "ウィジェット: %s"
@@ -5535,6 +5661,7 @@ msgstr "見出し5"
 msgid "Heading 6"
 msgstr "見出し6"
 
+#. translators: block tags
 #: wp-includes/class-wp-editor.php:767
 msgctxt "TinyMCE"
 msgid "Blocks"
@@ -5676,7 +5803,7 @@ msgid "OK"
 msgstr "OK"
 
 #: wp-includes/class-wp-editor.php:802 wp-includes/class-wp-editor.php:1437
-#: wp-includes/media.php:2766 wp-includes/script-loader.php:391
+#: wp-includes/media.php:2770 wp-includes/script-loader.php:391
 #: wp-includes/script-loader.php:442
 msgid "Cancel"
 msgstr "キャンセル"
@@ -5943,6 +6070,7 @@ msgctxt "find/replace"
 msgid "Next"
 msgstr "次へ"
 
+#. translators: previous
 #: wp-includes/class-wp-editor.php:875
 msgctxt "find/replace"
 msgid "Prev"
@@ -6184,6 +6312,7 @@ msgstr "ブロックを表示"
 msgid "Show invisible characters"
 msgstr "非表示文字を表示"
 
+#. translators: word count
 #: wp-includes/class-wp-editor.php:943
 msgid "Words: %s"
 msgstr "単語: %s"
@@ -6261,7 +6390,7 @@ msgstr "「続きを読む」タグを挿入"
 msgid "Distraction Free Writing"
 msgstr "集中執筆モード"
 
-#: wp-includes/class-wp-editor.php:1202 wp-includes/media.php:2767
+#: wp-includes/class-wp-editor.php:1202 wp-includes/media.php:2771
 #: wp-includes/script-loader.php:362 wp-includes/script-loader.php:452
 msgid "Update"
 msgstr "更新"
@@ -6334,7 +6463,7 @@ msgstr "Y年n月j日"
 msgid "Enter the destination URL"
 msgstr "リンク先 URL を入力してください"
 
-#: wp-includes/class-wp-editor.php:1399 wp-includes/media.php:2762
+#: wp-includes/class-wp-editor.php:1399 wp-includes/media.php:2766
 msgid "URL"
 msgstr "URL"
 
@@ -6441,6 +6570,7 @@ msgstr "作者のホームページを表示"
 msgid "Anonymous"
 msgstr "匿名"
 
+#. translators: used between list items, there is a space after the comma
 #: wp-includes/class-wp-theme.php:677
 msgid ", "
 msgstr ", "
