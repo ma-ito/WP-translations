@@ -892,7 +892,7 @@ msgstr "強力"
 
 #: wp-includes/script-loader.php:339 wp-login.php:631
 msgid "Strength indicator"
-msgstr "強度表示器"
+msgstr "強度インジケータ"
 
 #: wp-includes/script-loader.php:340
 msgid "Very weak"
